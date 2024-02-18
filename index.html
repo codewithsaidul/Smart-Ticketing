@@ -116,7 +116,7 @@
     <main>
         <!-- ====================== Home Section Start ================ -->
         <section id="home mt-5">
-            <div class="w-full mt-5 mx-auto max-w-[1170px] px-4 lg:px-0">
+            <div class="w-full mt-5 mx-auto max-w-[1170px] px-4 lg:px-0 lg:relative">
                 <div class="hero h-auto pt-20 pb-36 rounded-[32px]" style="background-image: url(./images/banner.png);">
                     <!-- <div class="hero-overlay bg-opacity-60"></div> -->
                     <div class="hero-content text-center text-neutral-content">
@@ -133,13 +133,60 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ====== Home Footer ======== -->
+                <div class="flex gap-5 mt-5 lg:mt-0 flex-col items-center mx-auto lg:flex-row lg:absolute bottom-[-80px]  lg:left-[10%] lg:right-[10%]">
+
+                    <!-- ============= Home Footer Card 1 ========= -->
+                    <div class="flex items-center space-x-3 p-8 bg-[#fff] border-b-[3px] border-[#1DD100] rounded-3xl shadow">
+                        <div>
+                            <img src="./images/people.png" alt="people">
+                        </div>
+
+                        <div>
+                            <h2 class="text-4xl font-bold text-[#030712] mb-3">500K+</h2>
+                            <p class="text-lg text-[#03071299] font-normal">Registered users</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ============= Home Footer Card 2 ========= -->
+                    <div class="flex items-center space-x-3 p-8 bg-[#fff] border-b-[3px] border-[#1DD100] rounded-3xl shadow">
+                        <div>
+                            <img src="./images/ticket-cupon.png" alt="ticket-cupon">
+                        </div>
+
+                        <div>
+                            <h2 class="text-4xl font-bold text-[#030712] mb-3">1.7 lacks</h2>
+                            <p class="text-lg text-[#03071299] font-normal">Tickets sold</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ============= Home Footer Card 3 ========= -->
+                    <div class="flex items-center space-x-3 p-8 bg-[#fff] border-b-[3px] border-[#1DD100] rounded-3xl shadow">
+                        <div>
+                            <img src="./images/stoppage.png" alt="people">
+                        </div>
+
+                        <div>
+                            <h2 class="text-4xl font-bold text-[#030712] mb-3">80K+</h2>
+                            <p class="text-lg text-[#03071299] font-normal">Rental partners</p>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
             </div>
         </section>
         <!-- ====================== Home Section End ================ -->
 
 
         <!-- ====================== Offer Section Start ================ -->
-        <section id="offer" class="w-full mt-24 mx-auto max-w-[1170px] px-4 lg:px-0 mb-10">
+        <section id="offer" class="w-full mt-40 mx-auto max-w-[1170px] px-4 lg:px-0 mb-10">
 
 
             <div class="flex flex-col space-y-20">
@@ -663,10 +710,13 @@
     <!-- ======================== Footer Start ========================== -->
     <footer class="bg-[#030712] py-16 px-10 sm:p-28">
         <div>
-            <div class="flex flex-col md:flex-row justify-between md:items-center border-b border-[#FFFFFF4D] border-dashed pb-20">
+            <div
+                class="flex flex-col md:flex-row justify-between md:items-center border-b border-[#FFFFFF4D] border-dashed pb-20">
                 <div>
                     <h2 class="text-4xl text-white font-extrabold title__font mb-3">P-Ticket</h2>
-                    <p class="text-lg font-normal w-full md:w-[375px] text-[#FFFFFFCC]"> <span class="font-extrabold">P-Tickets</span> is the best online ticket platform for buying tickets. ... AVAILABLE BUS OPERATORS.</p>
+                    <p class="text-lg font-normal w-full md:w-[375px] text-[#FFFFFFCC]"> <span
+                            class="font-extrabold">P-Tickets</span> is the best online ticket platform for buying
+                        tickets. ... AVAILABLE BUS OPERATORS.</p>
                 </div>
 
                 <div class="mt-5 md:mt-0 space-y-6">
@@ -684,9 +734,11 @@
             </div>
 
 
-            <div class="mt-10 flex flex-col text-center space-y-3 md:flex-row md:items-center md:justify-between md:space-y-0">
+            <div
+                class="mt-10 flex flex-col text-center space-y-3 md:flex-row md:items-center md:justify-between md:space-y-0">
                 <div>
-                    <p class="text-base font-normal text-[#FFFFFFB2]">@all rights reserved, P-Ticket services limited.2024</p>
+                    <p class="text-base font-normal text-[#FFFFFFB2]">@all rights reserved, P-Ticket services
+                        limited.2024</p>
                 </div>
 
                 <div class="flex flex-col gap-3 lg:flex-row">
