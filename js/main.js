@@ -159,6 +159,7 @@ for (let seat of seatBtn) {
 
             sendBtn.addEventListener('click', function (e) {
               inputNumber.value = '';
+             
             })
           }
         });
