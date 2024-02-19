@@ -3,58 +3,6 @@ const seatArr = [];
 let seatAvl = 40;
 let buySeat = 0;
 
-// for (let seat of seatBtn) {
-//     seat.addEventListener("click", function () {
-//        const seatText = seat.innerText;
-//        seat.classList.add('bg-[#1DD100]', 'text-[#fff]');
-
-//        seat.classList.remo('bg-[#1DD100]')
-
-//         const td1 = document.createElement('td')
-//         const td2 = document.createElement('td')
-//         const td3 = document.createElement('td')
-//         const td4 = document.createElement('tr')
-
-//         td1.innerText = seatText;
-//         td2.innerText = "Economy";
-//         td3.innerText = 550;'xc
-
-//         const seatContain = document.getElementById("table-body")
-
-//         td4.appendChild(td1);
-//         td4.appendChild(td2);
-//         td4.appendChild(td3);
-
-//         seatContain.append(td4);
-
-//         seatArr.push(seat.innerText);
-
-//         const seatLeft = document.getElementById('seat-left');
-//         const seatBuy = document.getElementById('seat-buy');
-
-//         buySeat += 1;
-
-//         seatBuy.innerText = buySeat;
-
-//         if (seatArr.length > 4) {
-
-//             alert ("You Have been Seleted Maximum Number Seat")
-
-//             for (let seat of seatBtn) {
-//                 seat.removeEventListener("click")
-//             }
-
-//         }
-
-//         seatAvl -= 1;
-
-//         seatLeft.innerText = seatAvl
-
-//     })
-
-// }
-
-// Get The HTML Element
 
 for (let seat of seatBtn) {
   seat.addEventListener("click", function (e) {
@@ -167,8 +115,11 @@ for (let seat of seatBtn) {
         alert("You Are Selected Maximum Number of Seat");
       }
     } else {
-      // alert ("Already Selected");
-     
+      if (selected) {
+        
+        alert ("Already Selected");
+       
+      }
     }
   });
 }
@@ -185,6 +136,7 @@ function appendTableRow(seatNo) {
     const td2 = document.createElement("td");
     const td3 = document.createElement("td");
     const td4 = document.createElement("tr");
+    td1.classList.add("seatRow");
     td4.classList.add("tro");
     td1.innerText = seatNo;
     td2.innerText = "Economy";
