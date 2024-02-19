@@ -213,3 +213,11 @@ function discount20(discounts) {
 }
 
 
+
+// Refresh The Page When Clicked Continue Button on Modal
+
+const refreshBtn = document.getElementById('refresh-button');
+
+refreshBtn.addEventListener('click', function (e) {
+  location.reload();
+})
