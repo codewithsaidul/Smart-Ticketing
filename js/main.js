@@ -155,9 +155,11 @@ for (let seat of seatBtn) {
               "border-[#1DD100]"
             );
 
-            // sendBtn.addEventListener('click', function (e) {
-            //   console.log("iiiii")
-            // })
+
+
+            sendBtn.addEventListener('click', function (e) {
+              inputNumber.value = '';
+            })
           }
         });
       } else if (seatArr.length >= 4) {
